@@ -15,6 +15,29 @@ Call the function `stackedAreaChart` with the following parameters:
 - `legend` (array): An array of objects representing the data series in the graph. Each object should have the properties "id" (a unique identifier for the series) and "color" (a string representing the color to use for the series, in CSS format).
 - `data` (array): An array of arrays representing the data to be plotted on the graph. Each inner array should contain objects with properties "id" (matching one of the ids in the legend), and "value" (the value to plot for that data point).
 
+To embed the `stackedAreaChart.js` file in your `index.html` file alongside p5.js, you can follow these steps:
+
+1. Download the `stackedAreaChart.js` file from the GitHub repository by visiting the following link: https://raw.githubusercontent.com/chase-robbins/p5js-stacked-area-chart/main/stackedAreaChart.js
+
+2. Save the downloaded file to your local project directory.
+
+3. In your `index.html` file, add a script tag to include p5.js and the `stackedAreaChart.js` file. The script tag should be placed before the closing body tag, like this:
+
+```
+<body>
+   <!-- Your HTML content goes here -->
+   <!-- Include p5.js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+   <!-- Include stackedAreaChart.js -->
+   <script src="stackedAreaChart.js"></script>
+</body>
+ ```
+ 
+4. Save your index.html file and open it in a web browser. You should now be able to use the stackedAreaChart function from within your p5.js sketch.
+Note that the URL in the script tag for p5.js points to a content delivery network (CDN) that hosts the p5.js library. If you prefer to host the library yourself, you can download it from the p5.js website and include it as a local file instead.
+
+Just replace the example URLs and filenames with the ones specific to your project.
+
 ## Example
 
 ```
