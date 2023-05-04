@@ -2,9 +2,12 @@
 
 This is a function that draws a modular p5js stacked area chart using the given parameters.
 
+![chart image](readme_image.png)
+
 ## Usage
 
 Call the function `stackedAreaChart` with the following parameters:
+
 - `width` (number): The width of the graph.
 - `maxHeight` (number): The maximum height of the graph.
 - `x` (number): The x-coordinate of the top-left corner of the graph.
@@ -42,7 +45,6 @@ let data = [
 stackedAreaChart(400, 200, 50, 50, legend, data);
 ```
 
-
 ## Parameters
 
 - `width` (number): The width of the graph.
@@ -54,4 +56,4 @@ stackedAreaChart(400, 200, 50, 50, legend, data);
 
 ## License
 
-This component is licensed under the MIT License.
+This component is licensed under the MIT License. Developed as part of [Aaron Siegel](https://twitter.com/datadreamer)'s "Designing Digital Experiences" class at the [USC Iovine & Young Academy](https://iovine-young.usc.edu/).
