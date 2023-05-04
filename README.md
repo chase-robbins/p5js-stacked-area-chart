@@ -1,4 +1,4 @@
-# Modular p5js Stacked Area Chart
+# p5.js Stacked Area Chart
 
 This is a function that draws a modular p5js stacked area chart using the given parameters.
 
