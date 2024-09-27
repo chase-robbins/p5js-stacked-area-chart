@@ -31,10 +31,10 @@ To embed the `stackedAreaChart.js` file in your `index.html` file alongside p5.j
    <!-- Include stackedAreaChart.js -->
    <script src="stackedAreaChart.js"></script>
 </body>
- ```
- 
+```
+
 4. Save your index.html file and open it in a web browser. You should now be able to use the stackedAreaChart function from within your p5.js sketch.
-Note that the URL in the script tag for p5.js points to a content delivery network (CDN) that hosts the p5.js library. If you prefer to host the library yourself, you can download it from the p5.js website and include it as a local file instead.
+   Note that the URL in the script tag for p5.js points to a content delivery network (CDN) that hosts the p5.js library. If you prefer to host the library yourself, you can download it from the p5.js website and include it as a local file instead.
 
 Just replace the example URLs and filenames with the ones specific to your project.
 
@@ -76,6 +76,17 @@ stackedAreaChart(400, 200, 50, 50, legend, data);
 - `y` (number): The y-coordinate of the top-left corner of the graph.
 - `legend` (array): An array of objects representing the data series in the graph. Each object should have the properties "id" (a unique identifier for the series) and "color" (a string representing the color to use for the series, in CSS format).
 - `data` (array): An array of arrays representing the data to be plotted on the graph. Each inner array should contain objects with properties "id" (matching one of the ids in the legend), and "value" (the value to plot for that data point).
+
+## How It Works
+
+The `stackedAreaChart` function performs the following steps:
+
+1. Calculates the width of each bar based on the total width and number of data points.
+2. Reformats the input data to make it easier to work with.
+3. Normalizes the data to fit within the specified maximum height.
+4. Draws the stacked area graph using p5.js shape functions.
+
+The function uses p5.js methods like `beginShape()`, `vertex()`, and `endShape()` to create the stacked area chart. It iterates through each data point and draws shapes representing the areas for each series.
 
 ## License
 
